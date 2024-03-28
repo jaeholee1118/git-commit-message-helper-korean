@@ -1,0 +1,58 @@
+<idea-plugin>
+    <id>commit-message-helper-idea-plugin-Korean</id>
+    <name>Git Commit Message Helper Korean</name>
+    <vendor email="" url="https://github.com/jaeholee1118/git-commit-message-helper-ko">jaeholee1118</vendor>
+    <version>1.4.1</version>
+
+
+    <description><![CDATA[<p>Description notes will be filled by gradle build</p>]]></description>
+
+    <change-notes><![CDATA[<p>Change notes will be filled by gradle build</p>]]></change-notes>
+
+
+    <idea-version since-build="203.*"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.vcs</depends>
+
+
+    <application-components>
+    </application-components>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <applicationService
+                serviceImplementation="com.jaeholee1118.storage.GitCommitMessageHelperSettings"/>
+        <projectService
+                serviceImplementation="com.jaeholee1118.storage.GitCommitMessageStorage"/>
+
+        <applicationConfigurable groupId="null"
+                                 id="plugins.gitcommitmessagehelper"
+                                 displayName="GitCommitMessageHelper"
+                                 instance="com.jaeholee1118.configurable.CentralSettingConfigurable"/>
+
+        <applicationConfigurable
+                instance="com.jaeholee1118.configurable.TemplateConfigurable"
+                id="plugins.gitcommitmessagehelper.template"
+                groupId="plugins.gitcommitmessagehelper" displayName="Commit Template"/>
+
+    </extensions>
+
+
+    <resource-bundle>i18n.info</resource-bundle>
+
+
+    <actions>
+        <action id="Commit.Button" class="com.jaeholee1118.action.CreateCommitAction"
+                text="Create Commit Message"
+                description="Create commit message"
+                icon="/icons/pluginIcon.png">
+            <keyboard-shortcut first-keystroke="ctrl alt g" keymap="$default" />
+            <add-to-group group-id="Vcs.MessageActionGroup" anchor="first"/>
+        </action>
+    </actions>
+
+
+</idea-plugin>
