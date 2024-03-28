@@ -2,7 +2,7 @@
     <id>commit-message-helper-idea-plugin-Korean</id>
     <name>Git Commit Message Helper Korean</name>
     <vendor email="" url="https://github.com/jaeholee1118/git-commit-message-helper-ko">jaeholee1118</vendor>
-    <version>1.4.1</version>
+    <version>1.0.0</version>
 
 
     <description><![CDATA[<p>Description notes will be filled by gradle build</p>]]></description>

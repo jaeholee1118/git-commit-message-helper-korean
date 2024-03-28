@@ -146,13 +146,13 @@ public class GitCommitMessageHelperSettings implements PersistentStateComponent<
         typeAliases.add(new TypeAlias("\uD83D\uDC1B fix", PluginBundle.get("fix.description")));
         typeAliases.add(new TypeAlias("📝 docs", PluginBundle.get("docs.description")));
         typeAliases.add(new TypeAlias("\uD83D\uDC84 style", PluginBundle.get("style.description")));
-        typeAliases.add(new TypeAlias("♻\uFE0F refactor", PluginBundle.get("refactor.description")));
-        typeAliases.add(new TypeAlias("⚡\uFE0F perf", PluginBundle.get("perf.description")));
+        typeAliases.add(new TypeAlias("♻ refactor", PluginBundle.get("refactor.description")));
+        typeAliases.add(new TypeAlias("⚡ perf", PluginBundle.get("perf.description")));
         typeAliases.add(new TypeAlias("✅ test", PluginBundle.get("test.description")));
         typeAliases.add(new TypeAlias("\uD83D\uDC77 build", PluginBundle.get("build.description")));
         typeAliases.add(new TypeAlias("\uD83D\uDC9A ci", PluginBundle.get("ci.description")));
         typeAliases.add(new TypeAlias("\uD83D\uDD27 chore", PluginBundle.get("chore.description")));
-        typeAliases.add(new TypeAlias("⏪\uFE0F revert", PluginBundle.get("revert.description")));
+        typeAliases.add(new TypeAlias("⏪ revert", PluginBundle.get("revert.description")));
         return typeAliases;
     }
 
