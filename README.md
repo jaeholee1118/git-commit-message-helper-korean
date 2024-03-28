@@ -5,10 +5,10 @@ This plugin is an upgraded version of the source idea plugin [git-commit-message
 
 
 ## Installation / 설치 방법
-Install directly from the IDE plugin manager (File > Settings > Plugins > Marketplace > Git Commit Message Helper) 
+Install directly from the IDE plugin manager (File > Settings > Plugins > Marketplace > Git Commit Message Helper Korean) 
 * 추후 등록 예정
 
-https://nos-gitlab.nmn.io/NBP.GB/gitmoji-intellij-plugin_b/raw/master/git-commit-message-helper-korean-1.0.0.jar?inline=false 에서 다운로드 가능
+https://nos-gitlab.nmn.io/NBP.GB/gitmoji-intellij-plugin_b/raw/master/Git%20Commit%20Message%20Helper%20Korean-1.0.0.zip?inline=false 에서 다운로드 가능
 
 ## Usage / 사용법
 ### Keyboard shortcut / 단축키
